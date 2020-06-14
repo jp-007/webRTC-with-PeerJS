@@ -1,0 +1,5 @@
+{
+    "env":{
+        "process.env.MONGO_DB_URI":'mongodb+srv://jp_007:jpatmongoDB@jp-node-rest-epsyl.mongodb.net/video_call_app?retryWrites=true&w=majority'
+    }
+}

@@ -67,6 +67,11 @@ function recStream(stream, elemid){
 var conn
 var myID
 var peerid
+//var peer = new Peer();
+
+var ice;
+
+
 var peer = new Peer();
 
 //GENERATING MY ID
@@ -161,4 +166,17 @@ document.getElementById("call_btn").addEventListener('click',function(){
 
         recStream(stream,'rVideo')
     })
+})
+
+
+//gaming
+
+document.getElementById("box").addEventListener('click',function(){
+peer.emit("change");
+console.log("heyyy")
+
+})
+
+peer.on("change",function(){
+    console.log("heyyy")
 })
